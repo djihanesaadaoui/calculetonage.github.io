@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcule ton age</title>
+    <link rel="stylesheet" href="Untitled-1.css">
+    <script src="Untitled-2.js"></script>
+<body>
+  <div class="container">
+      <form>
+          <div class="base">
+              <div class="enter"><h4>calcule ton age</h4></div>
+              <div class="block">
+                  <p class="title">Date</p>
+                  <input
+                      type="text"
+                      name="Date"
+                      id="date"
+                      placeholder="entrer"
+                      required="required"
+                      minlength="1"
+                      maxlength="2"
+                  />
+              </div>
+              <div class="block">
+                  <p class="title">Mois</p>
+                  <input
+                      type="text"
+                      name="Mois"
+                      id="month"
+                      placeholder="entrer"
+                      required="required"
+                      minlength="1"
+                      maxlength="2"
+                  />
+              </div>
+              <div class="block">
+                  <p class="title">annee</p>
+                  <input
+                      type="text"
+                      name="annee"
+                      id="year"
+                      placeholder="entrer"
+                      required="required"
+                      minlength="4"
+                      maxlength="4"
+                  />
+              </div>
+          </div>
+          <div class="base">
+              <div class="entrer">
+                  <input
+                      type="button"
+                      name="calculer"
+                      value="submit"
+                      onclick="age()"
+                  />
+              </div>
+          </div>
+          <div id="age"></div>
+      </form>
+  </div>
+</body>
